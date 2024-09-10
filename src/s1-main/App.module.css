@@ -1,0 +1,37 @@
+.App {
+    --header_height: 60px;
+    max-width: 1280px;
+    width: 100%;
+}
+
+.hw {
+    padding: 24px 70px 32px;
+    position: relative;
+}
+
+.hw::before {
+    content: "";
+    width: 100vw;
+    height: 1px;
+    background-color: #D9D9D9;
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-70px);
+}
+
+.hwTitle {
+    padding: 131px 70px 10px;
+    font-size: 22px;
+    font-weight: 600;
+    position: relative;
+}
+
+.hwTitle::before {
+    content: "";
+    width: 100vw;
+    height: 1px;
+    background-color: #D9D9D9;
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-70px);
+}
