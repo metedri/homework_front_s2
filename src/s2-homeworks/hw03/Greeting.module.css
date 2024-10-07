@@ -41,11 +41,6 @@
     
 }
 
-.button:focus {
-}
-
-.button:active {
-}
 
 .button:disabled {
     opacity: 0.5;
