@@ -2,6 +2,7 @@
     --header_height: 60px;
     max-width: 1280px;
     width: 100%;
+    margin: 0 auto;
 }
 
 .hw {
@@ -16,7 +17,8 @@
     background-color: #D9D9D9;
     position: absolute;
     bottom: 0;
-    transform: translateX(-70px);
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .hwTitle {
@@ -33,5 +35,6 @@
     background-color: #D9D9D9;
     position: absolute;
     bottom: 0;
-    transform: translateX(-70px);
+    left: 50%;
+    transform: translateX(-50%);
 }
