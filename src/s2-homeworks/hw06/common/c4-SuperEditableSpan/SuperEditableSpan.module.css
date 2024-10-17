@@ -1,11 +1,18 @@
 .spanBlock {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .span {
+    color: #0080FF;
 }
 
 .input {
+    border: 1px solid #D1D1D1;
 }
 
 .pen {
+    width: 24px;
+    height: 24px;
 }
