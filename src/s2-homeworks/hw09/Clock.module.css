@@ -1,14 +1,21 @@
 .buttonsContainer {
+    display: flex;
+    gap: 20px;
 }
 
 .clock {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .watch {
+    font-size: 20px;
 }
 
-.watch strong {
-}
+/* .watch strong {
+} */
 
 .more {
+    color: rgba(0, 0, 0, 0.5);
 }

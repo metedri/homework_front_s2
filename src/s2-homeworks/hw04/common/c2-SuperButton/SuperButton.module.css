@@ -55,5 +55,6 @@
     background-color: #B21232;
 }
 
-/* .button:disabled {
-} */
+.button:disabled {
+    color: #FFFFFF;
+}
