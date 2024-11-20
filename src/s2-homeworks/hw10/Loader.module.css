@@ -1,3 +1,18 @@
 .loader {
-    /*свг и/или анимация*/
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px solid transparent;
+    background: linear-gradient(#ffffff, #ffffff 0) padding-box,
+    linear-gradient(to right, #ffffff, #0066CC) border-box;
+    animation: loader 1s linear infinite;
+}
+
+@keyframes loader {
+    from {
+        transform: rotate(360deg)
+    }
+    to {
+        transform: rotate(0deg)
+    }
 }
