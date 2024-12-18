@@ -19,5 +19,7 @@ html {
 }
 
 .select {
-
+    width: 171px;
+    margin-top: 20px;
+    text-transform: capitalize;
 }
