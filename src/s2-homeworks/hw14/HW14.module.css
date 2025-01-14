@@ -1,7 +1,13 @@
 .tech {
-
+  font-weight: 500;
+  line-height: 24px;
 }
 
 .loading {
+  width: 372px;
+  display: flex;
+  justify-content: flex-end;
 
+  color: #4d4d4d;
+  font-size: 14px;
 }
