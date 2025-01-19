@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import s2 from '../../s1-main/App.module.css'
 import s from './HW15.module.css'
 import axios from 'axios'
@@ -6,15 +6,6 @@ import SuperPagination from './common/c9-SuperPagination/SuperPagination'
 import { useSearchParams } from 'react-router-dom'
 import SuperSort from './common/c10-SuperSort/SuperSort'
 import { Loader } from '../hw10/Loader'
-
-/*
- * 1 - дописать SuperPagination
- * 2 - дописать SuperSort
- * 3 - проверить pureChange тестами
- * 3 - дописать sendQuery, onChangePagination, onChangeSort в HW15
- * 4 - сделать стили в соответствии с дизайном
- * 5 - добавить HW15 в HW5/pages/JuniorPlus
- * */
 
 type TechType = {
   id: number

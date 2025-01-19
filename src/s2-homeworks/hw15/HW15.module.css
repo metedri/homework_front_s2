@@ -13,11 +13,17 @@
 .techHeader {
   width: 50vw;
   padding-left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .developerHeader {
   width: 50vw;
   padding-left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .row {

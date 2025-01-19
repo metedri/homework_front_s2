@@ -3,7 +3,7 @@ import SuperSelect from '../../../hw07/common/c5-SuperSelect/SuperSelect'
 import { Pagination } from '@mui/material'
 import s from './SuperPagination.module.css'
 
-export type SuperPaginationPropsType = {
+export type Props = {
   id?: string
   page: number
   itemsCountForPage: number
@@ -11,22 +11,12 @@ export type SuperPaginationPropsType = {
   onChange: (page: number, count: number) => void
 }
 
-const SuperPagination: React.FC<SuperPaginationPropsType> = ({
-  page,
-  itemsCountForPage,
-  totalCount,
-  onChange,
-  id = 'hw15',
-}) => {
+const SuperPagination: React.FC<Props> = ({ page, itemsCountForPage, totalCount, onChange, id = 'hw15' }) => {
   const lastPage = Math.ceil(totalCount / itemsCountForPage)
 
-  const onChangeCallback = (event: any, page: number) => {
-    onChange(page, itemsCountForPage)
-  }
+  const onChangeCallback = (event: any, page: number) => onChange(page, itemsCountForPage)
 
-  const onChangeSelect = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    onChange(page, +event.currentTarget.value)
-  }
+  const onChangeSelect = (event: number) => onChange(page, event)
 
   return (
     <div className={s.pagination}>
@@ -52,7 +42,7 @@ const SuperPagination: React.FC<SuperPaginationPropsType> = ({
           { id: 7, value: 7 },
           { id: 10, value: 10 },
         ]}
-        onChange={onChangeSelect}
+        onChangeOption={onChangeSelect}
       />
 
       <span className={s.text2}>строк в таблице</span>
